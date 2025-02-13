@@ -22,11 +22,11 @@ mod tests {
     #[test]
     fn regular_structs() {
         // TODO: Instantiate a regular struct.
-        // let green =
+        // let green = 
         let green = ColorRegularStruct {
             red: 0,
             green: 255,
-            blue: 0,
+            blue: 0
         };
 
         assert_eq!(green.red, 0);
@@ -50,8 +50,7 @@ mod tests {
         // TODO: Instantiate a unit struct.
         // let unit_struct =
         let unit_struct = UnitStruct;
-        // let message = format!("{unit_struct:?}s are fun!");
-        let message = format!("{:?}s are fun!", unit_struct);
+        let message = format!("{unit_struct:?}s are fun!");
 
         assert_eq!(message, "UnitStructs are fun!");
     }
